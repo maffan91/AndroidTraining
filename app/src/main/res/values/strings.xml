@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">AndroidTraining</string>
+    <string name="fetch_user_button_lable">Fetch Now!</string>
+</resources>
