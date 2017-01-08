@@ -22,5 +22,7 @@ public class MainActivity extends AppCompatActivity {
         // user fetching code here
         Toast.makeText(this,"Fetching...",Toast.LENGTH_LONG).show();
 
+
+
     }
 }
