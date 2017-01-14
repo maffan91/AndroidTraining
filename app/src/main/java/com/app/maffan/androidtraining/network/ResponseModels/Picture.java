@@ -1,13 +1,20 @@
 package com.app.maffan.androidtraining.network.ResponseModels;
 
+import com.google.gson.annotations.SerializedName;
+
 /**
  * Created by maffan on 1/6/2017.
  */
 
 public class Picture {
 
+    @SerializedName("large")
     private String large;
+
+    @SerializedName("medium")
     private String medium;
+
+    @SerializedName("thumbnail")
     private String thumbnail;
 
     public Picture(String large, String medium, String thumbnail) {

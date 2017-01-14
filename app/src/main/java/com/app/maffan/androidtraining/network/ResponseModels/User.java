@@ -1,18 +1,36 @@
 package com.app.maffan.androidtraining.network.ResponseModels;
 
 
+import com.google.gson.annotations.SerializedName;
 
 public class User {
 
 
+    @SerializedName("gender")
     private String gender;
+
+    @SerializedName("name")
     private Name name;
+
+    @SerializedName("location")
     private Location location;
+
+    @SerializedName("email")
     private String email;
+
+    @SerializedName("dob")
     private String dob;
+
+    @SerializedName("registered")
     private String registered;
+
+    @SerializedName("phone")
     private String phone;
+
+    @SerializedName("cell")
     private String cell;
+
+    @SerializedName("picture")
     private Picture picture;
 
 

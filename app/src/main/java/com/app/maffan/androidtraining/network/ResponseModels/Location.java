@@ -1,12 +1,20 @@
 package com.app.maffan.androidtraining.network.ResponseModels;
 
 
+import com.google.gson.annotations.SerializedName;
 
 public class Location {
 
+    @SerializedName("street")
     private String street;
+
+    @SerializedName("city")
     private String city;
+
+    @SerializedName("state")
     private String state;
+
+    @SerializedName("postCode")
     private int postCode;
 
     public Location(String street, String city, String state, int postCode) {
