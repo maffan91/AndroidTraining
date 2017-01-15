@@ -118,4 +118,162 @@ public class User {
     public void setPicture(Picture picture) {
         this.picture = picture;
     }
+
+    public class Name {
+
+        @SerializedName("title")
+        private String title;
+
+        @SerializedName("first")
+        private String first;
+
+        @SerializedName("last")
+        private String last;
+
+        public Name(String title, String first, String last) {
+            this.title = title;
+            this.first = first;
+            this.last = last;
+        }
+
+        public String getTitle() {
+            return title;
+        }
+
+        public void setTitle(String title) {
+            this.title = title;
+        }
+
+        public String getFirst() {
+            return first;
+        }
+
+        public void setFirst(String first) {
+            this.first = first;
+        }
+
+        public String getLast() {
+            return last;
+        }
+
+        public void setLast(String last) {
+            this.last = last;
+        }
+
+        @Override
+        public String toString() {
+
+            return this.title + ' ' + this.first + ' ' + this.last;
+
+        }
+    }
+
+
+    public class Location {
+
+        @SerializedName("street")
+        private String street;
+
+        @SerializedName("city")
+        private String city;
+
+        @SerializedName("state")
+        private String state;
+
+        @SerializedName("postCode")
+        private int postCode;
+
+        public Location(String street, String city, String state, int postCode) {
+            this.street = street;
+            this.city = city;
+            this.state = state;
+            this.postCode = postCode;
+        }
+
+        public String getStreet() {
+            return street;
+        }
+
+        public void setStreet(String street) {
+            this.street = street;
+        }
+
+        public String getCity() {
+            return city;
+        }
+
+        public void setCity(String city) {
+            this.city = city;
+        }
+
+        public String getState() {
+            return state;
+        }
+
+        public void setState(String state) {
+            this.state = state;
+        }
+
+        public int getPostCode() {
+            return postCode;
+        }
+
+        public void setPostCode(int postCode) {
+            this.postCode = postCode;
+        }
+
+        @Override
+        public String toString() {
+            return this.street + ',' + this.city;
+        }
+    }
+
+
+    public class Picture {
+
+        @SerializedName("large")
+        private String large;
+
+        @SerializedName("medium")
+        private String medium;
+
+        @SerializedName("thumbnail")
+        private String thumbnail;
+
+        public Picture(String large, String medium, String thumbnail) {
+            this.large = large;
+            this.medium = medium;
+            this.thumbnail = thumbnail;
+        }
+
+
+        public String getLarge() {
+            return large;
+        }
+
+        public void setLarge(String large) {
+            this.large = large;
+        }
+
+        public String getMedium() {
+            return medium;
+        }
+
+        public void setMedium(String medium) {
+            this.medium = medium;
+        }
+
+        public String getThumbnail() {
+            return thumbnail;
+        }
+
+        public void setThumbnail(String thumbnail) {
+            this.thumbnail = thumbnail;
+        }
+    }
+
+
+
+
+
 }
