@@ -52,7 +52,6 @@ public class MainActivity extends AppCompatActivity {
 
                 Toast.makeText(getApplicationContext(),"Request Successful",Toast.LENGTH_SHORT).show();
                 showUsers(response.body().getUsers());
-
             }
 
             @Override
